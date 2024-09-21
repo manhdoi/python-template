@@ -1,6 +1,6 @@
 import importlib_metadata as metadata
 
-name = "{{cookiecutter.project_name}}"
+name = "{{cookiecutter.project_slug}}"
 
 try:
     version = metadata.version(name)

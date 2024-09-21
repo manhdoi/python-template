@@ -6,11 +6,12 @@ author = "{{cookiecutter.author_name}}"
 author_email = "{{cookiecutter.author_email}}"
 description = "{{cookiecutter.description}}"
 license_ = "{{cookiecutter.license}}"
+packages = ["{{cookiecutter.project_slug}}"]
 
 setup(
     name=name,
     version=version,
-    packages=[''],
+    packages=packages,
     url='',
     license=license_,
     author=author,

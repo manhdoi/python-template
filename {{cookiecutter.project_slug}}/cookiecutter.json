@@ -1,0 +1,9 @@
+{
+  "project_name": "demo_application",
+  "project_slug": "{{ cookiecutter.project_name.lower().replace(' ', '_') }}",
+  "author_name": "Anonymous",
+  "license": "MIT",
+  "author_email": "",
+  "description": "",
+  "version": "0.0.1"
+}

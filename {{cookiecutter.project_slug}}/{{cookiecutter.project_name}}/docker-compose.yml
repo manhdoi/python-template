@@ -1,0 +1,28 @@
+services:
+  mysql:
+    image: mysql:8.0
+    container_name: mysql
+    command: --default-authentication-plugin=mysql_native_password
+    volumes:
+      - ./data/mysql:/var/lib/mysql
+    ports:
+      - "3306:3306"
+      - "33060:33060"
+    env_file:
+      - .env
+
+  redis:
+    image: redis:7.2.5
+    container_name: redis
+    ports:
+      - "6379:6379"
+
+  builder:
+    build: .
+    container_name: builder
+    volumes:
+      - ./dist:/opt/app/dist
+    command:
+      - python
+      - -m
+      - build
