@@ -8,4 +8,5 @@ def cli():
 
 @cli.command()
 def version():
-    pass
+    from {{cookiecutter.project_slug}}.version import version
+    print(version)

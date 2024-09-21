@@ -1,0 +1,15 @@
+data
+.dockerignore
+.gitignore
+docker-compose.yml
+Makefile
+.idea
+*.pyc
+__pycache__
+node_modules
+dist
+package-lock.json
+build
+render.egg-info
+dist
+build
